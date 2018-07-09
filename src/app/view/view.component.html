@@ -1,0 +1,17 @@
+<div class="container">
+  <div class=row>
+    <div class="col-md-4" *ngFor="let k of objVideo">
+      <div class="card">
+        <div class="card-header">
+          <iframe class="img-fluid" [src]="k.path |safe"></iframe>
+        </div>
+        <div class="card-body">
+          <p>{{k.des}}</p>
+        </div>
+        <div class="card-footer bg-dark">
+          <h5 class="text-white text-center">{{k.title}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

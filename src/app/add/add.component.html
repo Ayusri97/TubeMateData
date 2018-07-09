@@ -1,0 +1,27 @@
+<br>
+<br>
+<div class="container">
+  <div class="col-lg-6">
+
+    <form id="form1" name="form1" #VideoData="ngForm" (ngSubmit)="AddNewVideo(VideoData.value)">
+      <div class="form-group">
+        <label>Video Title</label>
+        <input type="text" id="title" name="title" class="form-control" ngModel/>
+      </div>
+
+      <div class="form-group">
+        <label>Video Path</label>
+        <input type="text" id="path" name="path" class="form-control" ngModel/>
+      </div>
+
+
+      <div class="form-group">
+        <label>Video Description</label>
+        <input type="text" id="des" name="des" class="form-control" ngModel/>
+
+      </div>
+
+      <input type="submit" value="submit" class="btn btn-outline-danger" />
+    </form>
+  </div>
+</div>
